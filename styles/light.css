@@ -27,7 +27,7 @@
     --button-text-color: #353430;
   }
 
-  .page.theme_auto .header__rec {
+  .page:not(.theme_dark) .header__rec {
     display: none;
   }
 }
