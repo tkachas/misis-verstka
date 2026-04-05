@@ -44,7 +44,7 @@
 .header__rec {
   position: absolute;
   inset-block-start: var(--main-padding);
-  inset-inline-end: 39px;
+  inset-inline-end: calc(var(--main-padding) + 37px);
   color: var(--accent-color);
   font-size: inherit;
   text-transform: uppercase;
@@ -249,7 +249,7 @@
     grid-column: 3;
   }
 
-  .gallery__image--books {
+  .gallery__image--tape {
     grid-row: span 2;
   }
 
