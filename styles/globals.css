@@ -1,6 +1,4 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
-*,
+*
 *::before,
 *::after {
   box-sizing: border-box;
@@ -28,9 +26,9 @@ ul {
   list-style: none;
 }
 
+img,
 picture {
-  margin: 0;
-  padding: 0;
+  display: block;
 }
 
 button,
@@ -39,4 +37,8 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+button {
+  appearance: none;
 }
