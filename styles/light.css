@@ -1,40 +1,37 @@
 .page.theme_light {
-	--background-color: var(--color-pink-seventh, #fff1f7);
-	--background-image: url('../images/cover-image-light.png');
-	--title-color: var(--color-pink-sixth, #ffc2e6);
-	--header-text-color: var(--color-grey, #353430);
-	--decorated-color: var(--color-grey, #353430);
-	--decorated-color-40: var(--color-grey-40, #35343040);
-	--section-title-color: var(--color-grey, #353430);
-	--article-title-color: var(--color-grey, #353430);
-	--accent-color: var(--color-pink-fifth, #ff8dcb);
-	--text-color: var(--color-grey, #f1b2ce);
-	--hover-color: var(--color-pink-fourth, #353430);
-	--focus-color: var(--color-pink-fourth, #353430);
+  --background-color: var(--color-pink-seventh, #fff1f7);
+  --background-image: url('../images/cover-image-light.png');
+  --title-color: var(--color-pink-sixth, #ffc2e6);
+  --header-text-color: var(--color-grey, #353430);
+  --decorated-color: var(--color-grey, #353430);
+  --decorated-color-40: var(--color-grey-40, rgb(53 52 48 / 0.4));
+  --section-title-color: var(--color-grey, #353430);
+  --article-title-color: var(--color-grey, #353430);
+  --accent-color: var(--color-pink-fifth, #ff8dcb);
+  --accent-pink: var(--color-pink-fifth, #ff8dcb);
+  --text-color: var(--color-grey, #353430);
 }
 
 .page.theme_light .recording {
-	display: none;
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
-	:root {
-		--background-color: var(--color-pink-seventh, #fff1f7);
-		--background-image: url('../images/cover-image-light.png');
-		--title-color: var(--color-pink-sixth, #ffc2e6);
-		--header-text-color: var(--color-grey, #353430);
-		--decorated-color: var(--color-grey, #353430);
-		--decorated-color-40: var(--color-grey-40, #35343040);
-		--section-title-color: var(--color-grey, #353430);
-		--article-title-color: var(--color-grey, #353430);
-		--accent-color: var(--color-pink-fifth, #ff8dcb);
-		--text-color: var(--color-grey, #f1b2ce);
-		--hover-color: var(--color-pink-fourth, #353430);
-		--focus-color: var(--color-pink-fourth, #353430);
-		--recording-display: none;
-	}
+  .page {
+    --background-color: var(--color-pink-seventh, #fff1f7);
+    --background-image: url('../images/cover-image-light.png');
+    --title-color: var(--color-pink-sixth, #ffc2e6);
+    --header-text-color: var(--color-grey, #353430);
+    --decorated-color: var(--color-grey, #353430);
+    --decorated-color-40: var(--color-grey-40, rgb(53 52 48 / 0.4));
+    --section-title-color: var(--color-grey, #353430);
+    --article-title-color: var(--color-grey, #353430);
+    --accent-color: var(--color-pink-fifth, #ff8dcb);
+    --accent-pink: var(--color-pink-fifth, #ff8dcb);
+    --text-color: var(--color-grey, #353430);
+  }
 
-	.recording {
-		display: none;
-	}
+  .page:not(.theme_dark) .recording {
+    display: none;
+  }
 }
