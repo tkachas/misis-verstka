@@ -1,33 +1,40 @@
 .page.theme_light {
-  --page-bg-color: #fff1f7;
-  --page-bg-image: url('../images/cover-image-light.png');
-  --accent-color: #ff8dcb;
-  --accent-color-soft: rgb(50 49 45 / 0.4);
-  --heading-color: #ffc2e6;
-  --title-decor-text-color: #353430;
-  --section-title-color: #353430;
-  --main-text-color: #353430;
-  --button-text-color: #353430;
+	--background-color: var(--color-pink-seventh, #fff1f7);
+	--background-image: url('../images/cover-image-light.png');
+	--title-color: var(--color-pink-sixth, #ffc2e6);
+	--header-text-color: var(--color-grey, #353430);
+	--decorated-color: var(--color-grey, #353430);
+	--decorated-color-40: var(--color-grey-40, #35343040);
+	--section-title-color: var(--color-grey, #353430);
+	--article-title-color: var(--color-grey, #353430);
+	--accent-color: var(--color-pink-fifth, #ff8dcb);
+	--text-color: var(--color-grey, #f1b2ce);
+	--hover-color: var(--color-pink-fourth, #353430);
+	--focus-color: var(--color-pink-fourth, #353430);
 }
 
-.page.theme_light .header__rec {
-  display: none;
+.page.theme_light .recording {
+	display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  .page {
-    --page-bg-color: #fff1f7;
-    --page-bg-image: url('../images/cover-image-light.png');
-    --accent-color: #ff8dcb;
-    --accent-color-soft: rgb(50 49 45 / 0.4);
-    --heading-color: #ffc2e6;
-    --title-decor-text-color: #353430;
-    --section-title-color: #353430;
-    --main-text-color: #353430;
-    --button-text-color: #353430;
-  }
+	:root {
+		--background-color: var(--color-pink-seventh, #fff1f7);
+		--background-image: url('../images/cover-image-light.png');
+		--title-color: var(--color-pink-sixth, #ffc2e6);
+		--header-text-color: var(--color-grey, #353430);
+		--decorated-color: var(--color-grey, #353430);
+		--decorated-color-40: var(--color-grey-40, #35343040);
+		--section-title-color: var(--color-grey, #353430);
+		--article-title-color: var(--color-grey, #353430);
+		--accent-color: var(--color-pink-fifth, #ff8dcb);
+		--text-color: var(--color-grey, #f1b2ce);
+		--hover-color: var(--color-pink-fourth, #353430);
+		--focus-color: var(--color-pink-fourth, #353430);
+		--recording-display: none;
+	}
 
-  .page:not(.theme_dark) .header__rec {
-    display: none;
-  }
+	.recording {
+		display: none;
+	}
 }
